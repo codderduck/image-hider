@@ -4,9 +4,6 @@
 
 **Browse the web without the pictures.** Image Hider stops images from loading on the websites you choose, so pages load faster, use less data, and stop image-based tracking on the sites you pick.
 
-<img src="docs/popup-light.png" alt="Image Hider in light mode" width="300">
-&nbsp;&nbsp;
-<img src="docs/popup-dark.png" alt="Image Hider in dark mode" width="300">
 
 </div>
 
