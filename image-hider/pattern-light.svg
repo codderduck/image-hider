@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <g fill="none" stroke="#C2410C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.12">
+    <!-- Photo frame -->
+    <rect x="14" y="16" width="38" height="30" rx="4"/>
+    <circle cx="26" cy="27" r="3.5"/>
+    <path d="M16 42 L26 32 L32 38 L38 31 L50 42"/>
+
+    <!-- Duck head -->
+    <path d="M127 22 C126 18 129 15 133 14 C131 17 132 19 134 21"/>
+    <circle cx="130" cy="31" r="11"/>
+    <path d="M140 29 Q151 28 152 33 Q151 38 140 37"/>
+    <circle cx="134" cy="28" r="1.4" fill="#C2410C" stroke="none"/>
+
+    <!-- Crossed-out image -->
+    <rect x="72" y="66" width="36" height="28" rx="4"/>
+    <circle cx="82" cy="76" r="3"/>
+    <path d="M75 88 L85 78 L91 84 L97 77 L105 88"/>
+    <path d="M70 62 L110 98"/>
+
+    <!-- Sparkle -->
+    <path d="M24 74 C25 80 26 81 32 82 C26 83 25 84 24 90 C23 84 22 83 16 82 C22 81 23 80 24 74 Z"/>
+
+    <!-- Small photo frame -->
+    <rect x="12" y="128" width="30" height="24" rx="3"/>
+    <path d="M14 148 L22 140 L27 145 L32 139 L40 148"/>
+
+    <!-- Webbed footprint -->
+    <path d="M122 132 Q130 126 138 132 Q138 138 130 141 Q122 138 122 132 Z"/>
+    <path d="M126 130 L130 141 M134 130 L130 141"/>
+
+    <!-- Heart -->
+    <path d="M160 94 C158 91 153 92 153 96 C153 100 160 103 160 103 C160 103 167 100 167 96 C167 92 162 91 160 94 Z"/>
+
+    <!-- Dots and crosses -->
+    <circle cx="88" cy="32" r="1.6"/>
+    <circle cx="172" cy="78" r="1.6"/>
+    <path d="M60 112 l4 4 M64 112 l-4 4"/>
+    <circle cx="178" cy="156" r="1.6"/>
+    <circle cx="100" cy="168" r="1.6"/>
+    <path d="M40 178 l4 4 M44 178 l-4 4"/>
+    <circle cx="170" cy="28" r="1.6"/>
+  </g>
+</svg>

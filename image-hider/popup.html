@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-state="allowed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Image Hider</title>
+    <script src="theme-init.js"></script>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="app-icon"
+        src="icons/icon32.png"
+        width="30"
+        height="30"
+        alt=""
+      />
+      <div class="brand">
+        <h1>Image Hider</h1>
+        <p class="tagline">Make the images on your website disappear</p>
+      </div>
+      <button
+        id="themeToggle"
+        class="theme-btn"
+        type="button"
+        aria-label="Switch to dark mode"
+        title="Switch to dark mode"
+      >
+        <svg
+          class="theme-icon icon-sun"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+          />
+        </svg>
+        <svg
+          class="theme-icon icon-moon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="site-card">
+        <div class="site-row">
+          <div class="site-info">
+            <span class="eyebrow">Current site</span>
+            <div id="siteName" class="site-name">Loading…</div>
+            <span id="siteStatus" class="status">Checking…</span>
+          </div>
+          <label class="switch" title="Block images on this site">
+            <input type="checkbox" id="siteToggle" disabled />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="actions-row">
+          <button id="addToListBtn" class="btn add-list-btn" type="button" disabled>
+            <svg
+              class="btn-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+            Add to list
+          </button>
+          <button id="reloadBtn" class="btn reload-btn" disabled>
+            <svg
+              class="btn-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 12a8 8 0 1 1-2.34-5.66" />
+              <path d="M20 4v5h-5" />
+            </svg>
+            Reload page
+          </button>
+        </div>
+      </section>
+
+      <section class="list-section">
+        <div class="list-head">
+          <h2>Blocked sites</h2>
+          <span id="count" class="count">0</span>
+        </div>
+
+        <div class="add-row">
+          <input
+            id="domainInput"
+            type="text"
+            placeholder="Add a domain, e.g. news.com"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Domain to block"
+          />
+          <button id="addBtn" class="btn add-btn">Add</button>
+        </div>
+
+        <ul id="domainList" class="domain-list"></ul>
+
+        <div id="emptyState" class="empty-state">
+          <p>No blocked sites yet.</p>
+          <p class="empty-hint">Add a domain above, or turn on the current site and press Add to list.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Blocked images are never downloaded. Reload the page to apply changes.
+      </p>
+      <!-- <a class="support-btn" href="https://google.com" target="_blank" rel="noopener noreferrer">
+      <svg class="support-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M3 3h3.2v18H3z"/>
+        <circle cx="15.4" cy="12" r="7.2"/>
+      </svg>
+      Support on Patreon
+    </a> -->
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
