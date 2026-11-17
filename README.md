@@ -1,13 +1,12 @@
 <div align="center">
 
-# image-hider
+<h1>image-hider</h1>
 
-# A Browser Extension
-Image Hider stops images from loading on the websites you choose, so pages load faster, use less data, and stop image-based tracking on the sites you pick.
+<h3>A Browser Extension</h3>
 
+<p>Image Hider stops images from loading on the websites you choose, so pages load faster, use less data, and stop image-based tracking on the sites you pick.</p>
 
 </div>
-
 ---
 
 ## ✨ Features
