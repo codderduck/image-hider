@@ -1,50 +1,67 @@
-# Image Hider
+<div align="center">
 
-**Make the images on your website disappear.**
+# 🖼️ Image Hider
 
-Image Hider is a lightweight Chrome extension that stops images from loading on the sites you choose. Instead of hiding images after they arrive, it blocks the requests at the network layer — saving data, speeding up pages, and cutting off image-based tracking pixels.
+**Browse the web without the pictures.** Image Hider stops images from loading on the websites you choose, so pages load faster, use less data, and stop image-based tracking on the sites you pick.
 
-## Features
+<img src="docs/popup-light.png" alt="Image Hider in light mode" width="300">
+&nbsp;&nbsp;
+<img src="docs/popup-dark.png" alt="Image Hider in dark mode" width="300">
 
-- **One-click blocking for the current site** — flip the main toggle and reload.
-- **Add to list** — keep a site blocked on every visit. Turning on a new site blocks it temporarily until you add it.
-- **Per-site controls** — pause or resume blocking for any saved site without deleting the record.
-- **Light and dark themes** — starts in light mode; the toggle in the header remembers your choice.
-- **Syncs with your browser** — your list follows your Chrome profile, so it is there on your other signed-in devices.
-- **No data collection** — no analytics, accounts, or third-party services.
+</div>
 
-## Install in your browser
+---
 
-Image Hider is not on the Chrome Web Store yet. You can install it from source in under a minute.
+## ✨ Features
 
-1. **Download the code** — click **Code → Download ZIP** on this repository, then extract the archive. You can also clone the repository with Git.
-2. Open your browser's extensions page:
-   - Chrome — `chrome://extensions`
-   - Edge — `edge://extensions`
-   - Brave — `brave://extensions`
-   - Opera — `opera://extensions`
-3. Turn on **Developer mode** in the top-right corner.
-4. Click **Load unpacked** and select the project folder — the one that contains `manifest.json`.
-5. Pin Image Hider from the puzzle-piece menu so the popup is one click away.
+- 🔘 **One switch for the current site.** Block or allow images on the page you're viewing.
+- 📋 **Your own blocked list.** Add any website and its images stay blocked every time you visit.
+- ⏸️ **Pause without removing.** Turn blocking off for a listed site and back on whenever you like.
+- 🔄 **Reload button.** Apply your changes to the page instantly.
+- 🌗 **Light and dark mode.** Matches your device's setting.
+- 🔒 **Private by design.** Nothing is sent anywhere, and no personal data is collected.
 
-That's it. Open any website and click the toolbar icon.
+---
 
-> Requires Chrome 101 or newer, or a Chromium-based browser built on it.
+## 📥 How to add Image Hider to your browser
 
-### Update the extension
+This works in **Google Chrome, Microsoft Edge, Brave, and Opera**.
 
-After downloading new code, open the extensions page and click the reload icon on the Image Hider card.
+1. **Download the files.** On this page, click the green **Code** button, then click **Download ZIP**.
+2. **Unzip the file.** Right-click the downloaded file and choose **Extract All** (Windows) or double-click it (Mac). You'll get a folder called `image-hider`.
+3. **Move the folder somewhere safe.** Put it in a place you won't delete, such as your **Documents** folder. The browser needs this folder to keep the extension working.
+4. **Open your browser's extensions page.** Type one of these into the address bar and press Enter:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+   - Brave: `brave://extensions`
+   - Opera: `opera://extensions`
+5. **Turn on Developer mode.** Find the switch labeled **Developer mode** (top right in Chrome and Edge, bottom left in Opera) and switch it on.
+6. **Click "Load unpacked".** It appears at the top of the page once Developer mode is on.
+7. **Select the `image-hider` folder.** Click it once, then click **Select Folder**.
+8. **Pin it to your toolbar.** Click the puzzle-piece icon 🧩 at the top right of your browser, then click the pin next to **Image Hider**.
 
-## Privacy
+You're all set. Click the Image Hider icon any time you want to use it.
 
-Image Hider does not collect, transmit, or sell any data. There are no analytics, accounts, or third-party services in the extension.
+> 💡 Your browser may show a warning about developer mode extensions each time it starts. This is normal for this extension, so you can close the warning.
 
-Your blocked-sites list is stored with `chrome.storage.sync`, which is managed by your browser. If Chrome sync is enabled, the list syncs across your signed-in devices. The extension does not send it anywhere else.
+---
 
-## Contributing
+## 🚀 How to use it
 
-Issues and pull requests are welcome. If you report a bug, please include your browser version and, if you are comfortable sharing it, the site where the problem happened.
+1. Open any website and click the **Image Hider** icon.
+2. Turn on the switch under **Current site**. Images on that site will disappear.
+3. Click **Reload page** to see the change right away.
+4. To block a site you haven't visited yet, type its address (for example, `news.example.com`) under **Blocked sites** and click **+**.
+5. Use the switch next to any site in your list to pause it, or click **✕** to remove it.
 
-## Credits
+---
 
-The popup uses the [Nunito](https://fonts.google.com/specimen/Nunito) typeface by the Nunito Project Authors, licensed under the [SIL Open Font License 1.1](https://openfontlicense.org/).
+## ⚠️ Good to know
+
+- Images that were already loaded earlier may still show until you reload the page.
+- Blocked spots appear as empty space on the page.
+- Firefox and Safari are not supported at this time.
+
+---
+
+Made with care for a faster, calmer, and more private web. 🌿
