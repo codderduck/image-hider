@@ -2,7 +2,7 @@
 
 # image-hider
 
-**A Browser Extension** 
+# A Browser Extension
 Image Hider stops images from loading on the websites you choose, so pages load faster, use less data, and stop image-based tracking on the sites you pick.
 
 
